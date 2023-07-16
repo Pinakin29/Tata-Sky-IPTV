@@ -69,7 +69,7 @@ def getUserChannelSubscribedList():
         for userEntitlement in entitlements:
             if userEntitlement in channel['channel_entitlements']:
                 included.append(channel)
-    with open('userSubscribedChannels.json', 'w') as userSubChannelFile:
+    with open('allChanels.json', 'w') as userSubChannelFile:
         json.dump(included, userSubChannelFile)
 
     return included
